@@ -12,7 +12,7 @@
        It runs the same Canvas widget set on TeachersDeck's built-in demo data, with no Canvas sign-in.
    ========================================================= */
 window.TD_PLATFORM = (() => {
-  const BUILD = 'canvas.7';   // the platform build for local builds; the publish workflow numbers live builds itself (tools/build_platform.py --against)
+  const BUILD = 'canvas.8';   // the platform build for local builds; the publish workflow numbers live builds itself (tools/build_platform.py --against)
   const params = new URLSearchParams(location.search);
 
   // The Canvas pilot's core, board/lesson-running widgets (26: DrawDeck since canvas.2, ten more since canvas.3) — no personal student data, and nothing that needs its own
