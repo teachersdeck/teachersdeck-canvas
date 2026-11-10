@@ -64,7 +64,7 @@
       return;
     }
     try {
-      const exchange = firebase.functions().httpsCallable('ltiExchange');
+      const exchange = (window.TDBackend ? TDBackend.functions() : firebase.functions()).httpsCallable('ltiExchange');
       const result = (await exchange({ code })).data;
       await firebase.auth().signInWithCustomToken(result.token);
       stripLtiCodeFromUrl(); // single-use code — don't leave it sitting in history/referrers
