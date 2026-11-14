@@ -48,6 +48,8 @@ window.TD_PLATFORM = (() => {
     role: null,                                // set by js/canvas.js after the launch exchange
     fixedWidgets: true,                        // app.js: the allow-list IS the curation
     schoolPro: true,                           // app.js / cloud.js: a school's Pro licence makes its teachers Pro
+    proPurchase: true,                         // owner, 13 Nov 2026: a teacher may buy Pro here (VietQR); school Pro still counts
+    store: true,                               // owner, 13 Nov 2026: Theme → Shop (js/tdstore.js): themes, faces, docks on a store key
     deferInit: !preview,                       // app.js: wait for js/canvas.js to finish the launch before building the UI
     hides(widgetId) { return !CANVAS_WIDGETS.includes(widgetId); },
     presetFor() { return null; },
