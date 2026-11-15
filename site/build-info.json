@@ -1,10 +1,10 @@
 {
  "platform": "canvas",
  "name": "TeachersDeck for Canvas",
- "version": "0.45.0-canvas.1",
+ "version": "0.45.0-canvas.3",
  "app_version": "0.45.0",
- "build": "canvas.1",
- "commit": "ddc7bc1",
- "built": "2026-11-15T10:05:38Z",
+ "build": "canvas.3",
+ "commit": "a019d4a",
+ "built": "2026-11-15T15:20:07Z",
  "widgets": 46
 }
